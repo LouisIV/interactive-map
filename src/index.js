@@ -4,6 +4,7 @@ import './index.css';
 
 import SimpleMapPage from './simple_map_page';
 import NavBar from './nav_bar';
+import {Places} from './places';
 // import EventsMapPage from './events_map_page';
 
 
@@ -16,18 +17,7 @@ export default class App extends Component {
     this.state = {
       width: 0,
       height: 0,
-      options: [
-        {
-          name: 'Knoles Hall',
-          lat: 37.980556,
-          lng: -121.309847,
-        },
-        {
-          name: 'Buisness school',
-          lat: 37.981093,
-          lng: -121.309167,
-        }
-      ],
+      options: Places,
       center: [37.980556, -121.309847]
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
